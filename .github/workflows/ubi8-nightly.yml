@@ -4,7 +4,7 @@ name: github-UBI8-NIGHTLY
 on:
   workflow_dispatch:
   schedule:
-    - cron: '00 00 * * *'
+    - cron: '10 * * * *'
 
 permissions:
   contents: none
@@ -17,15 +17,10 @@ concurrency:
 jobs:
   ubi8-nightly:
     name: ubi8-nightly
-    runs-on: [ubuntu-latest]
+    runs-on: [opencsp-latest-ubi8-latest]
     permissions:
       packages: read
       contents: read
-    container: 
-      image: ghcr.io/sandialabs/opencsp:latest-ubi8
-      credentials:
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: checkout
