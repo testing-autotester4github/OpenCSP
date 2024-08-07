@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  ubi8-nightly:
+  ubi8-weekly:
     runs-on: [opencsp-ubi8-latest]
     permissions:
       packages: read
