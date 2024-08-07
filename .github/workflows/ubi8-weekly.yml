@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   ubi8-weekly:
-    runs-on: [opencsp-ubi8-latest]
+    runs-on: [opencsp-latest-ubi8]
     permissions:
       packages: read
       contents: read
