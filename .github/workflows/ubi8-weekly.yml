@@ -39,5 +39,4 @@ jobs:
             -vv \
             --cov=. --cov-report term \
             --cov-config=.coveragerc \
-            --dir-input=/box_data/scene_reconstruction/data_measurement/ \
             scene_reconstruction/example_scene_reconstruction.py
